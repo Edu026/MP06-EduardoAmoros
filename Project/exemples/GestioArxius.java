@@ -28,7 +28,7 @@ public class GestioArxius {
             if (f0.exists()) {
                 System.out.println("L'arxiu \"" + f0.getName() + "\" existeix");
             }
-
+            
             // Crear un arxiu
             File f1 = new File(basePath + "ArxiuTmp.txt");
             boolean arxiuCreat = f1.createNewFile();
