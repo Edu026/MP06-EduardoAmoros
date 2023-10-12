@@ -16,7 +16,7 @@ public class RegistreEstudiants {
         Scanner sc = new Scanner(System.in);
 
         while (programa){
-            String menu = "1) Afgir un nou alumne" + "\n" + "2) Actualitzar la nota d'un alumne" + "\n" + "3) Consultar la nota";
+            String menu = "1) Afgir un nou alumne" + "\n" + "2) Actualitzar la nota d'un alumne" + "\n" + "3) Consultar la nota" + "\n" + "4) Salir";
             menu = menu + "\n" + "Opcion : ";
             System.out.println(menu);
             String opcion = sc.nextLine();
@@ -36,7 +36,7 @@ public class RegistreEstudiants {
                             System.out.print("Nota :");
                             nota = sc.nextFloat();
                             afegirAlumne(raf, last_id, nom, nota);
-                            consultarAlumne(raf, last_id);
+                            //consultarAlumne(raf, last_id);
                             break;
 
                         case "2" : 
@@ -52,6 +52,10 @@ public class RegistreEstudiants {
                             consultarAlumne(raf, id_consulta);
                             
                             break;
+                        
+                        case "4": 
+                            raf.close();
+                            programa = false;
                     }
                 }catch(InputMismatchException e) {
                     System.out.println("Error: El valor ingresado tiene el formato válido.");
