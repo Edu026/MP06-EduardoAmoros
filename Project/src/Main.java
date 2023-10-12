@@ -1,5 +1,5 @@
 import java.io.IOException;
-import java.util.Scanner;
+import java.util.*;
 
 
 public class Main {
@@ -10,7 +10,7 @@ public class Main {
   public static void main(String[] args) throws InterruptedException, IOException {
     boolean running = true;
     while (running) {
-      String menu = "Escull una opció:";
+      String menu = "Escull una opcio:";
       menu = menu + "\n 0) PR120ReadFile";
       menu = menu + "\n 1) PR121Files";
       menu = menu + "\n 2) PR122cat";
@@ -20,6 +20,9 @@ public class Main {
       menu = menu + "\n 6) PR125cp";
       menu = menu + "\n 7) PR131Escriu";
       menu = menu + "\n 8) PR131Llegeix";
+      menu = menu + "\n 9) PR132main";
+      menu = menu + "\n 10) PR133mainTreballadors";
+
 
 
 
@@ -28,7 +31,7 @@ public class Main {
       System.out.println(menu);
 
 
-      int opcio = Integer.valueOf(llegirLinia("Opció:"));
+      int opcio = Integer.valueOf(llegirLinia("Opcio:"));
       try {
         switch (opcio) {
           case 0: PR120ReadFile.main(args); break;
@@ -41,6 +44,8 @@ public class Main {
           case 6: PR125cp.main(args);break;
           case 7: PR131mainEscriu.main(args);break;
           case 8: PR131mainLlegeix.main(args);break;
+          case 9: PR132main.main(args);break;
+          case 10: PR133mainTreballadors.main(args);break;
           case 100: running = false; break;
           default: break;
         }
