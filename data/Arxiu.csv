@@ -1,5 +1,9 @@
 id,titol,any,opinio
+<<<<<<< HEAD
+123,Avatar,2007,What?
+=======
 123,Avatar,2017,What?
+>>>>>>> 34388f7f5e1c8a55ca9ec7576478d6d2b11809b0
 321,Titanic,1997,Buff
 456,Furious,2015,Puaj
 654,Minions,2015,Guay
