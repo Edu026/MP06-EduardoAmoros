@@ -2,6 +2,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -23,6 +24,14 @@ public class PR141Main {
             Element elmRoot = doc.createElement("biblioteca");
             // Afegeix l'element root al document XML
             doc.appendChild(elmRoot);
+
+            Element elmLlibre = doc.createElement("llibre");
+            //Crear un atribut
+            Attr attrId = doc.createAttribute("id");
+            //Donar-li valor
+            attrId.setValue("001");
+            //Afegir un atribit a un element
+            elmLlibre.setAttributeNode(attrId);
 
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
