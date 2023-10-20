@@ -4,12 +4,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class PR140Main {
-    /*El programa ha de llegir el contingut del fitxer persones.xml (Veure Arxiu “persones.xml”)
-    Mostra les dades llegides en una sortida per pantalla amb format de columnes alineades. 
-    Amb "columnes alineades" ens referim a que les dades de cada camp 
-    (nom, cognom, edat, ciutat)
-     han d'aparèixer sota la seva respectiva capçalera en una presentació organitzada i fàcil de llegir.
- */
     public static void main(String[] args) {
         String basePath = System.getProperty("user.dir") + "/data/";
         String fileName = "persones.xml";
