@@ -5,9 +5,11 @@ import org.w3c.dom.NodeList;
 
 public class PR140Main {
     public static void main(String[] args) {
-        String basePath = System.getProperty("user.dir") + "/data/";
+        String basePath = System.getProperty("user.dir") + "/Project/data/";
         String fileName = "persones.xml";
         String filePath = basePath + fileName;
+
+        System.out.println( filePath);
 
         Document doc = UtilsXML.read(filePath);
 

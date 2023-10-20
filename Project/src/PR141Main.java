@@ -18,7 +18,7 @@ import org.w3c.dom.Text;
 
 public class PR141Main {
     public static void main(String[] args) {
-        String basePath = System.getProperty("user.dir") + "/data/";
+        String basePath = System.getProperty("user.dir") + "/Project/data/";
         String fileName = "biblioteca.xml";
         String filePath = basePath + fileName;
         
@@ -70,6 +70,22 @@ public class PR141Main {
             Element elemDisponible = doc.createElement("disponible");
             Text NodeTextDisponible = doc.createTextNode("true");
             elemDisponible.appendChild(NodeTextDisponible);
+
+            elmLlibre.appendChild(elemTitle);
+            elmLlibre.appendChild(elemAutor);
+            elmLlibre.appendChild(elemAnyPub);
+            elmLlibre.appendChild(elemEditorial);
+            elmLlibre.appendChild(elemGenere);
+            elmLlibre.appendChild(elemPagines);
+            elmLlibre.appendChild(elemDisponible);
+            
+            elmRoot.appendChild(elmLlibre);
+
+
+
+
+
+
 
             write(filePath, doc);
             
