@@ -25,6 +25,7 @@ public class Main {
       menu = menu + "\n 11) RegistreEstudiants";
       menu = menu + "\n 12)PR140Main" ;
       menu = menu + "\n 13)PR141Main" ;
+      menu = menu + "\n 14)PR142Main" ;
 
 
 
@@ -51,7 +52,8 @@ public class Main {
           case 10: PR133mainTreballadors.main(args);break;
           case 11: RegistreEstudiants.main(args);break;
           case 12: PR140Main.main(args);break;
-          case 13: PR141Main.main(args);;break;
+          case 13: PR141Main.main(args);break;
+          case 14: PR142Main.main(args);break;
           case 100: running = false; break;
           default: break;
         }

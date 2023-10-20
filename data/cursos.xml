@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><cursos>
+<?xml version="1.0" encoding="UTF-8"?>
+<cursos>
    <curs id="AMS2">
        <tutor>LARA,Francesc</tutor>
        <alumnes>
@@ -61,7 +62,7 @@
            <alumne>SANCHEZ, Eduard</alumne>
            <alumne>TROLLANO, Raul</alumne>
            <alumne>VAZQUEZ, Albert</alumne>
-       <alumne>PITARQUE, Albert</alumne></alumnes>
+       </alumnes>
        <moduls>
            <modul id="M01">
                <titol>Sistemes informatics</titol>
@@ -102,3 +103,4 @@
        </moduls>
    </curs>
 </cursos>
+
